@@ -65,3 +65,34 @@
 <p>
     I developed this project with the intention of creating a tool that I could reuse and expand upon in the future. To achieve this, I went beyond the course requirements to build a powerful, user-friendly simulator that makes exploring automata theory engaging and accessible. This tool combines enhanced functionality and a flexible design, allowing for deeper experimentation with DFAs, NFAs, and pattern recognition within strings.
 </p>
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<!-- OVERVIEW -->
+<h2 id="setup"> :computer: Installation and Setup</h2>
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<!-- OVERVIEW -->
+<h2 id="features"> :small_red_triangle_down: Features</h2>
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<!-- OVERVIEW -->
+<h2 id="usage"> :question: How to Use the Simulator?</h2>
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<!-- OVERVIEW -->
+<h2 id="examples"> :crystal_ball: Basic Examples</h2>
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<!-- OVERVIEW -->
+<h2 id="acknowledgments"> :mega: Acknowledgments</h2>
+
+<ul>
+    <li><strong>Thorgrimm</strong> for taking care of the entire graphical interface, making the simulator user-friendly and visually appealing.</li>
+    <li><strong>Professor Thierry Montaut</strong> for providing valuable guidance and insights during the Formal Language Theory course, helping to shape and refine the project.</li>
+    <li><strong>Myself</strong> for handling the algorithmic part of the automata, ensuring that the core functionality of DFA and NFA simulations works smoothly.</li>
+</ul>
