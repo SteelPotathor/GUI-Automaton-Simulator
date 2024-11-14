@@ -63,5 +63,5 @@
 </p>
 
 <p>
-    This project serves as an educational tool for understanding and experimenting with automata theory concepts, providing a hands-on way to explore how DFAs and NFAs process inputs and recognize patterns in strings.
+    I developed this project with the intention of creating a tool that I could reuse and expand upon in the future. To achieve this, I went beyond the course requirements to build a powerful, user-friendly simulator that makes exploring automata theory engaging and accessible. This tool combines enhanced functionality and a flexible design, allowing for deeper experimentation with DFAs, NFAs, and pattern recognition within strings.
 </p>
