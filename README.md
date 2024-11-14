@@ -3,7 +3,10 @@
 <h1 align="center"> GUI Automaton Simulator </h1>
 <h3 align="center"> Semester 6 - Formal Language Theory </h3>
 <h5 align="center"> Project Assignment - <a href="[https://www.albigamesfestival.fr/](https://www.univ-jfc.fr/)">Champollion University</a> (January-March 2024) </h5>
-    
+
+<p align="center">
+    <img src="img/automaton_presentation.gif">
+</p>
 p align="center">
   <a href="#about-the-project">About The Project</a> •
   <a href="#usage">How To Use</a> •
