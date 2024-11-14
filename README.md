@@ -15,9 +15,11 @@
 <ol>
     <li><a href="#about-the-project"> ➤ About The Project</a></li>
     <li><a href="#overview"> ➤ Overview</a></li>
-    <li><a href="#install"> ➤ Requirements</a></li>
-    <li><a href="#change-music"> ➤ Functions</a></li>
-    <li><a href="#credits"> ➤ Credits</a></li>
+    <li><a href="#setup"> ➤ Installation and Setup</a></li>
+    <li><a href="#features"> ➤ Features</a></li>
+    <li><a href="#usage"> ➤ How to Use the Simulator?</a></li>
+    <li><a href="#examples"> ➤ Basic Examples</a></li>
+    <li><a href="#acknowledgments"> ➤ Acknowledgments</a></li>
 </ol>
 </details>
 
