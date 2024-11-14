@@ -1,8 +1,8 @@
 ![made-with-python](https://img.shields.io/badge/Made%20with-Python3-brightgreen)
 
-<p align="center">
-    Python3 script to transfer files in Google Colab 10-50x faster.
-</p>
+<h1 align="center"> GUI Automaton Simulator </h1>
+<h3 align="center"> Semester 6 - Formal Language Theory </h3>
+<h5 align="center"> Project Assignment - <a href="[https://www.albigamesfestival.fr/](https://www.univ-jfc.fr/)">Champollion University</a> (January-March 2024) </h5>
     
 p align="center">
   <a href="#about-the-project">About The Project</a> •
