@@ -135,7 +135,7 @@ python3 Simulator.py</code></pre>
 <h2 id="usage"> :question: How to Use the Simulator?</h2>
 
 <ol>
-    <li><strong>Define Alphabet:</strong> Use the <b>"Alphabet"</b> button to add symbols (e.g., <code>a, b, 0, 1</code>).</li>
+    <li><strong>Define Alphabet:</strong> Use the <b>"Alphabet"</b> button to add symbols (e.g., <code>a, b, c, d</code>).</li>
     <li><strong>Initialize:</strong> Click <b>"Automaton's parameters"</b> to set the number of states and identify which are initial or accepting.</li>
     <li><strong>Configure Transitions:</strong> Click <b>"Modify table"</b> to open the transition grid. Enter the target states for each alphabet symbol (use 'epsilon' for NFA transitions).</li>
     <li><strong>Simulate:</strong> Enter a word in the top bar and click <b>"Start the analysis"</b>. The canvas will animate the state transitions.</li>
@@ -155,26 +155,39 @@ python3 Simulator.py</code></pre>
 <!-- OVERVIEW -->
 <h2 id="examples"> :crystal_ball: Basic Examples</h2>
 
-<details>
-<summary><b>Example: Creating an NFA for "Ends with 'ab'"</b></summary>
-<p>To recognize the language $L = \{w \in \{a,b\}^* \mid w \text{ ends in } ab\}$:</p>
-<ul>
-    <li><b>States:</b> 1 (Initial), 2, 3 (Accepting)</li>
-    <li><b>Transitions:</b> 
-        <ul>
-            <li>(1, 'a') $\rightarrow$ {1, 2}</li>
-            <li>(1, 'b') $\rightarrow$ {1}</li>
-            <li>(2, 'b') $\rightarrow$ {3}</li>
-        </ul>
-    </li>
-</ul>
-<p align="center"><img src="img/example_nfa.png" width="500px"></p>
-</details>
+This example demonstrates a basic 3-state automaton over the alphabet `{a, b}`.
 
-<details>
-<summary><b>Example: Determinization (NFA to DFA)</b></summary>
-<p>By clicking the <b>"Determinate"</b> button on the example above, the simulator uses the Power Set Construction algorithm (found in <code>determinate_automaton_epsilon_transition</code>) to generate an equivalent DFA with unique state transitions.</p>
-</details>
+### 1. Basic Configuration
+1.  **Define Alphabet**: Click the **Alphabet** button and add `a` and `b`.
+2.  **Set State Logic**: Click **Automaton's parameters** and configure:
+    *   **Number of states**: 3
+    *   **Initial State**: Select `0`
+    *   **Final State**: Select `2`
+
+### 2. Filling the Transition Table
+Click the **Modify table** button. This table defines how the machine moves between states. Enter the targets as shown below:
+
+| State | Input **a** | Input **b** |
+|:--- |:--- |:--- |
+| **0** (Start) | `1` |  |
+| **1** |  | `2` |
+| **2** (End) | `2` |  |
+
+*(Note: A space ` ` means no transition exists for that symbol.)*
+
+### 3. Visual Schema
+Once configured, your logic will follow this flow:
+### Logic Schema
+```mermaid
+graph LR
+    start(( )) --> 0((0))
+    0 -- a --> 1((1))
+    1 -- b --> 2(((2)))
+    2 -- a --> 2
+    
+    style start fill:none,stroke:none
+    style q2 stroke-width:4px
+```
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -186,3 +199,5 @@ python3 Simulator.py</code></pre>
     <li><strong>Professor Thierry Montaut</strong> for providing valuable guidance and insights during the Formal Language Theory course, helping to shape and refine the project.</li>
     <li><strong>Myself</strong> for handling the algorithmic part of the automata, ensuring that the core functionality of DFA and NFA simulations works smoothly.</li>
 </ul>
+
+[![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SteelPotathor)
