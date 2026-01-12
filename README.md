@@ -155,13 +155,13 @@ python3 Simulator.py</code></pre>
 <!-- OVERVIEW -->
 <h2 id="examples"> :crystal_ball: Basic Examples</h2>
 
-This example demonstrates a basic 3-state automaton over the alphabet `{a, b}`.
+This example demonstrates a basic 2-state automaton over the alphabet `{a, b}` that accepts words finishing with `a`.
 
 ### 1. Basic Configuration
 1.  **Define Alphabet**: Click the **Alphabet** button and add `a` and `b`.
 2.  **Set State Logic**: Click **Automaton's parameters** and configure:
-    *   **Number of states**: 3
-    *   **Initial State**: Select `0`
+    *   **Number of states**: 2
+    *   **Initial State**: Select `1`
     *   **Final State**: Select `2`
 
 ### 2. Filling the Transition Table
@@ -169,9 +169,8 @@ Click the **Modify table** button. This table defines how the machine moves betw
 
 | State | Input **a** | Input **b** |
 |:--- |:--- |:--- |
-| **0** (Start) | `1` |  |
-| **1** |  | `2` |
-| **2** (End) | `2` |  |
+| **1** (Initial State) | `2` | `1` |
+| **2** (Accepting State)| `2` | `1` |
 
 *(Note: A space ` ` means no transition exists for that symbol.)*
 
@@ -181,8 +180,8 @@ Once configured, your logic will follow this flow:
 ```mermaid
 graph LR
     start(( )) --> 0((0))
-    0 -- a --> 1((1))
-    1 -- b --> 2(((2)))
+    1 -- a --> 2((2))
+    1 -- b --> 1(((1)))
     2 -- a --> 2
     
     style start fill:none,stroke:none
