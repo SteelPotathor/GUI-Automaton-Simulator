@@ -73,20 +73,80 @@
 <!-- OVERVIEW -->
 <h2 id="setup"> :computer: Installation and Setup</h2>
 
+<p>To run the simulator, you need Python installed on your system along with a few specific libraries for the modern UI.</p>
+
+<details>
+<summary><b>1. Install Dependencies</b></summary>
+<p>Run these commands in your terminal to install the CustomTkinter UI engine and the Image library:</p>
+<pre><code>pip install customtkinter
+pip install pillow</code></pre>
+</details>
+
+<details>
+<summary><b>2. Run the Project</b></summary>
+<p>Clone the repository and run the main script:</p>
+<pre><code>git clone https://github.com/YourUsername/GUI-Automaton-Simulator.git
+cd GUI-Automaton-Simulator
+python main.py</code></pre>
+</details>
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- OVERVIEW -->
 <h2 id="features"> :small_red_triangle_down: Features</h2>
+
+<ul>
+    <li><strong>Full Automata Logic:</strong> Support for Deterministic (DFA) and Nondeterministic (NFA) automata, including <b>$\epsilon$-transitions</b>.</li>
+    <li><strong>Advanced Operations:</strong> 
+        <ul>
+            <li><b>Transformation:</b> Pruning, Completion, and Determinization.</li>
+            <li><b>Set Operations:</b> Intersection, Difference, Sum (Union), and Product of multiple automata.</li>
+            <li><strong>Kleene Logic:</strong> Compute L+ and L* (Kleene Star) of any language.</li>
+        </ul>
+    </li>
+    <li><strong>Visual Tape Reading:</strong> A real-time animation showing how the "Reading Head" moves across the input word.</li>
+    <li><strong>Tabbed Interface:</strong> Manage multiple automata simultaneously using an integrated notebook system.</li>
+    <li><strong>Modern UI/UX:</strong> Built with <code>CustomTkinter</code>, featuring a **Dark/Light mode** switch for comfortable viewing.</li>
+</ul>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- OVERVIEW -->
 <h2 id="usage"> :question: How to Use the Simulator?</h2>
 
+<ol>
+    <li><strong>Initialize:</strong> Click <b>"Automaton's parameters"</b> to set the number of states and identify which are initial or accepting.</li>
+    <li><strong>Configure Transitions:</strong> Click <b>"Modify table"</b> to open the transition grid. Enter the target states for each alphabet symbol (use 'epsilon' for NFA transitions).</li>
+    <li><strong>Define Alphabet:</strong> Use the <b>"Alphabet"</b> button to add symbols (e.g., <code>a, b, 0, 1</code>).</li>
+    <li><strong>Simulate:</strong> Enter a word in the top bar and click <b>"Start the analysis"</b>. The canvas will animate the state transitions.</li>
+    <li><strong>Transform:</strong> Use the sidebar buttons (<b>Determinate</b>, <b>Prune</b>, etc.) to modify the current automaton instantly.</li>
+</ol>
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- OVERVIEW -->
 <h2 id="examples"> :crystal_ball: Basic Examples</h2>
+
+<details>
+<summary><b>Example: Creating an NFA for "Ends with 'ab'"</b></summary>
+<p>To recognize the language $L = \{w \in \{a,b\}^* \mid w \text{ ends in } ab\}$:</p>
+<ul>
+    <li><b>States:</b> 1 (Initial), 2, 3 (Accepting)</li>
+    <li><b>Transitions:</b> 
+        <ul>
+            <li>(1, 'a') $\rightarrow$ {1, 2}</li>
+            <li>(1, 'b') $\rightarrow$ {1}</li>
+            <li>(2, 'b') $\rightarrow$ {3}</li>
+        </ul>
+    </li>
+</ul>
+<p align="center"><img src="img/example_nfa.png" width="500px"></p>
+</details>
+
+<details>
+<summary><b>Example: Determinization (NFA to DFA)</b></summary>
+<p>By clicking the <b>"Determinate"</b> button on the example above, the simulator uses the Power Set Construction algorithm (found in <code>determinate_automaton_epsilon_transition</code>) to generate an equivalent DFA with unique state transitions.</p>
+</details>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
