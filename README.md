@@ -85,29 +85,29 @@ This project was developed and tested using the following environment. Using the
   </tr>
   <tr>
     <td>Python</td>
-    <td>3.9 or higher</td>
+    <td>3.13+</td>
   </tr>
   <tr>
     <td>CustomTkinter</td>
-    <td>5.2.0+</td>
+    <td>5.2.2+</td>
   </tr>
   <tr>
     <td>Pillow (PIL)</td>
-    <td>10.0.0+</td>
+    <td>12.1.0+</td>
   </tr>
 </table>
 
 <details>
 <summary><b>Quick Install Command</b></summary>
-<pre><code>pip install customtkinter>=5.2.0 pillow>=10.0.0</code></pre>
+<pre><code>pip install customtkinter>=5.2.2 pillow>=12.1.0</code></pre>
 </details>
 
 <details>
 <summary><b>2. Run the Project</b></summary>
 <p>Clone the repository and run the main script:</p>
-<pre><code>git clone https://github.com/YourUsername/GUI-Automaton-Simulator.git
+<pre><code>git clone https://github.com/SteelPoathor/GUI-Automaton-Simulator.git
 cd GUI-Automaton-Simulator
-python main.py</code></pre>
+python Simulator.py</code></pre>
 </details>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
