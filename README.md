@@ -178,11 +178,26 @@ Click the **Modify table** button. This table defines how the machine moves betw
 Once configured, your logic will follow this flow:
 ```mermaid
 graph LR
-    start(( )) --> 1((1))
-    1 -- a --> 2((2))
-    1 -- b --> 1((1))
-    2 -- a --> 2(((2)))
-    2 -- b --> 1((1))
+    %% Hidden start node to create the entry arrow
+    initial(( )) --> 1
+
+    %% Transitions for State 1
+    1 -- "a" --> 2
+    1 --> |"b"| 1
+
+    %% Transitions for State 2
+    2 -- "b" --> 1
+    2 --> |"a"| 2
+
+    %% Styling
+    style initial fill:none,stroke:none
+    style 1 code-fill:#fff
+    style 2 stroke-width:4px,fill:#e1f5fe
+    
+    %% Shape definitions
+    node [shape = circle]
+    1((1))
+    2(((2)))
 ```
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
