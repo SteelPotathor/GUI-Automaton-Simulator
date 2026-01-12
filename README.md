@@ -135,12 +135,20 @@ python3 Simulator.py</code></pre>
 <h2 id="usage"> :question: How to Use the Simulator?</h2>
 
 <ol>
+    <li><strong>Define Alphabet:</strong> Use the <b>"Alphabet"</b> button to add symbols (e.g., <code>a, b, 0, 1</code>).</li>
     <li><strong>Initialize:</strong> Click <b>"Automaton's parameters"</b> to set the number of states and identify which are initial or accepting.</li>
     <li><strong>Configure Transitions:</strong> Click <b>"Modify table"</b> to open the transition grid. Enter the target states for each alphabet symbol (use 'epsilon' for NFA transitions).</li>
-    <li><strong>Define Alphabet:</strong> Use the <b>"Alphabet"</b> button to add symbols (e.g., <code>a, b, 0, 1</code>).</li>
     <li><strong>Simulate:</strong> Enter a word in the top bar and click <b>"Start the analysis"</b>. The canvas will animate the state transitions.</li>
     <li><strong>Transform:</strong> Use the sidebar buttons (<b>Determinate</b>, <b>Prune</b>, etc.) to modify the current automaton instantly.</li>
 </ol>
+    <li>
+        <b>Multi-Automata Operations:</b> You can work with multiple structures simultaneously to build complex logic:
+        <ul>
+            <li>Click the <b>"Add an automaton"</b> button to initialize a new, independent workspace.</li>
+            <li>Once you have multiple automata, use the <b>Operations</b> buttons (such as <b>Union</b>, <b>Intersection</b>, <b>Difference</b>, or <b>Product</b>) to merge them.</li>
+            <li>The simulator will automatically generate a new resulting automaton, calculating all <b>ε-transitions</b> and state mappings for you.</li>
+        </ul>
+    </li>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
