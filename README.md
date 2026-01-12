@@ -126,7 +126,7 @@ python3 Simulator.py</code></pre>
     </li>
     <li><strong>Visual Tape Reading:</strong> A real-time animation showing how the "Reading Head" moves across the input word.</li>
     <li><strong>Tabbed Interface:</strong> Manage multiple automata simultaneously using an integrated notebook system.</li>
-    <li><strong>Modern UI/UX:</strong> Built with <code>CustomTkinter</code>, featuring a **Dark/Light mode** switch for comfortable viewing.</li>
+    <li><strong>Modern UI/UX:</strong> Built with <code>CustomTkinter</code>, featuring a <b>Dark/Light mode</b> switch for comfortable viewing.</li>
 </ul>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
