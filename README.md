@@ -153,7 +153,7 @@ python3 Simulator.py</code></pre>
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- OVERVIEW -->
-<h2 id="examples"> :crystal_ball: Basic Examples</h2>
+<h2 id="examples"> :crystal_ball: Basic Example</h2>
 
 This example demonstrates a basic 2-state automaton over the alphabet `{a, b}` that accepts words finishing with `a`.
 
@@ -179,13 +179,11 @@ Once configured, your logic will follow this flow:
 ### Logic Schema
 ```mermaid
 graph LR
-    start(( )) --> 0((0))
+    start(( )) --> 1((1))
     1 -- a --> 2((2))
-    1 -- b --> 1(((1)))
-    2 -- a --> 2
-    
-    style start fill:none,stroke:none
-    style q2 stroke-width:4px
+    1 -- b --> 1((1))
+    2 -- a --> 2(((2)))
+    2 -- b --> 1((1))
 ```
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
