@@ -73,13 +73,33 @@
 <!-- OVERVIEW -->
 <h2 id="setup"> :computer: Installation and Setup</h2>
 
-<p>To run the simulator, you need Python installed on your system along with a few specific libraries for the modern UI.</p>
+
+<p align="justify">
+This project was developed and tested using the following environment. Using these versions ensures the GUI scaling and automaton logic perform as expected.
+</p>
+
+<table>
+  <tr>
+    <th>Dependency</th>
+    <th>Recommended Version</th>
+  </tr>
+  <tr>
+    <td>Python</td>
+    <td>3.9 or higher</td>
+  </tr>
+  <tr>
+    <td>CustomTkinter</td>
+    <td>5.2.0+</td>
+  </tr>
+  <tr>
+    <td>Pillow (PIL)</td>
+    <td>10.0.0+</td>
+  </tr>
+</table>
 
 <details>
-<summary><b>1. Install Dependencies</b></summary>
-<p>Run these commands in your terminal to install the CustomTkinter UI engine and the Image library:</p>
-<pre><code>pip install customtkinter
-pip install pillow</code></pre>
+<summary><b>Quick Install Command</b></summary>
+<pre><code>pip install customtkinter>=5.2.0 pillow>=10.0.0</code></pre>
 </details>
 
 <details>
