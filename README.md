@@ -18,7 +18,7 @@
     <li><a href="#setup"> ➤ Installation and Setup</a></li>
     <li><a href="#features"> ➤ Features</a></li>
     <li><a href="#usage"> ➤ How to Use the Simulator?</a></li>
-    <li><a href="#examples"> ➤ Basic Examples</a></li>
+    <li><a href="#examples"> ➤ Basic Example</a></li>
     <li><a href="#acknowledgments"> ➤ Acknowledgments</a></li>
 </ol>
 </details>
@@ -176,7 +176,6 @@ Click the **Modify table** button. This table defines how the machine moves betw
 
 ### 3. Visual Schema
 Once configured, your logic will follow this flow:
-### Logic Schema
 ```mermaid
 graph LR
     start(( )) --> 1((1))
