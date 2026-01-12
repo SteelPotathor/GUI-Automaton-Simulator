@@ -116,7 +116,7 @@ python3 Simulator.py</code></pre>
 <h2 id="features"> :small_red_triangle_down: Features</h2>
 
 <ul>
-    <li><strong>Full Automata Logic:</strong> Support for Deterministic (DFA) and Nondeterministic (NFA) automata, including <b>$ \varepsilon $-transitions</b>.</li>
+    <li><strong>Full Automata Logic:</strong> Support for Deterministic (DFA) and Nondeterministic (NFA) automata, including <b>ε-transitions</b>.</li>
     <li><strong>Advanced Operations:</strong> 
         <ul>
             <li><b>Transformation:</b> Pruning, Completion, and Determinization.</li>
