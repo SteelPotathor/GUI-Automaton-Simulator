@@ -98,7 +98,7 @@ This project was developed and tested using the following environment. Using the
 </table>
 
 <details>
-<summary><b>Quick Install Command</b></summary>
+<summary><b>1. Quick Install Command</b></summary>
 <pre><code>pip install customtkinter>=5.2.2 pillow>=12.1.0</code></pre>
 </details>
 
@@ -107,7 +107,7 @@ This project was developed and tested using the following environment. Using the
 <p>Clone the repository and run the main script:</p>
 <pre><code>git clone https://github.com/SteelPoathor/GUI-Automaton-Simulator.git
 cd GUI-Automaton-Simulator
-python Simulator.py</code></pre>
+python3 Simulator.py</code></pre>
 </details>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
