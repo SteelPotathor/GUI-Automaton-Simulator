@@ -177,19 +177,27 @@ Click the **Modify table** button. This table defines how the machine moves betw
 ### 3. Visual Schema
 Once configured, your logic will follow this flow:
 ```mermaid
-graph LR
-    %% The entry arrow
-    start(( )) --> 1((1))
+stateDiagram-v2
+    direction TB
 
-    %% Transitions
-    1 -- "a" --> 2(((2)))
-    1 -- "b" --> 1
-    2 -- "a" --> 2
-    2 -- "b" --> 1
+    [*] --> State1
+    
+    State1 --> State2 : a
+    State1 --> State1 : b
+    
+    State2 --> State1 : b
+    State2 --> State2 : a
 
-    %% Cleanup and Styling
-    style start fill:none,stroke:none
-    style 2 stroke-width:4px
+    state State1 {
+        direction LR
+        S1: State 1
+    }
+    state State2 {
+        direction LR
+        S2: State 2 (Accepting)
+    }
+
+    classDef default font-family:Arial,font-weight:bold;
 ```
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
