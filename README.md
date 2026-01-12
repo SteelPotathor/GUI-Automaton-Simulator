@@ -184,7 +184,7 @@ Once configured, your logic will follow this flow:
 <h2 id="acknowledgments"> :mega: Acknowledgments</h2>
 
 <ul>
-    <li><strong>Thorgrimm</strong> for taking care of the entire graphical interface, making the simulator user-friendly and visually appealing.</li>
+    <li><strong><a href="https://github.com/Thorgrimmneth">Thorgrimm</a></strong> for taking care of the entire graphical interface, making the simulator user-friendly and visually appealing.</li>
     <li><strong>Professor Thierry Montaut</strong> for providing valuable guidance and insights during the Formal Language Theory course, helping to shape and refine the project.</li>
     <li><strong>Myself</strong> for handling the algorithmic part of the automata, ensuring that the core functionality of DFA and NFA simulations works smoothly.</li>
 </ul>
