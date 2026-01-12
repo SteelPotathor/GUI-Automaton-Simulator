@@ -176,29 +176,7 @@ Click the **Modify table** button. This table defines how the machine moves betw
 
 ### 3. Visual Schema
 Once configured, your logic will follow this flow:
-```mermaid
-stateDiagram-v2
-    direction TB
-
-    [*] --> State1
-    
-    State1 --> State2 : a
-    State1 --> State1 : b
-    
-    State2 --> State1 : b
-    State2 --> State2 : a
-
-    state State1 {
-        direction LR
-        S1: State 1
-    }
-    state State2 {
-        direction LR
-        S2: State 2 (Accepting)
-    }
-
-    classDef default font-family:Arial,font-weight:bold;
-```
+<img src="img/automaton_diagram.png">
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
